@@ -31,6 +31,20 @@ form {
     max-width: 400px;  /* define uma largura para o form */
     margin: 0 auto;    /* centraliza na página */
 }
+form {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 input, select, button {
     width: 100%;              /* cada campo ocupa toda a largura disponível */
@@ -55,4 +69,9 @@ button {
 
 button:hover {
     background-color: #1565c0;
+}
+
+button:focus {
+    outline: 2px solid #ffffff;
+    outline-offset: 2px;
 }
