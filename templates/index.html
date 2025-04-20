@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadstro Flask</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="overlay"></div>
+    <h1>Formulário modelo</h1>
+
+    <form method="post">
+
+        <label for="empresa">Empresa:</label>
+        <input type="text" id="empresa" name="empresa">
+
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome">
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="data_nascimento">Data de Nascimento:</label>
+        <input type="date" id="data_nascimento" name="data_nascimento">
+
+        <label for="genero">Gênero:</label>
+        <select id="genero" name="genero">
+            <option value="">Selecione</option>
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="outro">Outro</option>
+        </select>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
+
+
+
